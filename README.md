@@ -4,10 +4,19 @@ CONSULMerit adds reputation behavior to CONSUL citizen participation software in
 
 # Installation
 
-1. Add `gem 'merit'` to your `Gemfile`
-2. Run `rails g merit:install`. This creates several migrations.
-3. Run `rails g merit MODEL_NAME` (e.g. `user`). This creates a migration and adds `has_merit` to MODEL_NAME.
+1. Add `gem 'consul_merit', git: 'https://github.com/ortegacmanuel/consul_merit.git'` to your `Gemfile_custom` file.
+2. Run `rake consul_merit:install:migrations`. This creates several migrations.
+3. Run `rails g merit user`. This creates a migration and adds `has_merit` to MODEL_NAME.
 4. Run `rake db:migrate`
-5. Define badges in `config/initializers/merit.rb`. You can also define ORM:
-   `:active_record` (default) or `:mongoid`.
-6. Configure reputation rules for your application in `app/models/merit/*`
+5. Run `rails g consul_merit:update_views`. This updates CONSUL user's show view in order to add the user's points/social coins.
+
+# How CONSULMerit works
+
+Once CONSULMerit is installed in your CONSUL the users gets points everytime they created a new detabe, proposal, Budget Investment or a Comment.
+
+- New detabe: 20 points
+- New proposal: 30 points
+- New Budget Investment: 40 points
+- New comment: 5 points
+
+You can check how many points a user has goint to it's profile page.

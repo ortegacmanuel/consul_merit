@@ -22,7 +22,7 @@ module Merit
         'proposals#create'
       ]
 
-      score 30, on: [
+      score 40, on: [
         'budget_investments#create'
       ]
 
