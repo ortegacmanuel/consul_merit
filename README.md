@@ -8,7 +8,7 @@ CONSULMerit adds reputation behavior to CONSUL citizen participation software in
 
 1. Add `gem 'consul_merit', git: 'https://github.com/ortegacmanuel/consul_merit.git'` to your `Gemfile_custom` file.
 2. Run `rake consul_merit:install:migrations`. This creates several migrations.
-3. Run `rails g merit user`. This adds `has_merit` to the User model.
+3. Run `rails g consul_merit user`. This adds `has_merit` to the User model.
 4. Run `rake db:migrate`
 5. Run `rails g consul_merit:update_views`. This updates CONSUL user's show view in order to show the user's points/social coins.
 
