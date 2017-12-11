@@ -1,0 +1,8 @@
+en:
+  consul_merit:
+    user_profile:
+      coins: Stars received
+    debates:
+      info: For each created debate you will receive 20
+    proposals:
+      info: For each created proposal you will receive 20

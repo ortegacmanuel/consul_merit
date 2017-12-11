@@ -20,8 +20,9 @@
       <h2 class="inline-block">
         <%= avatar_image(@user, seed: @user.id, size: 60) %>
         <%= @user.name %>
-        <span title="social coins">
-          <%= image_tag(image_path_for('consul_merit/coin.png'), size: '20x20', alt: 'social coins') %>
+        <span title="<%= t("consul_merit.user_profile.coins") %>">
+          <%= image_tag(image_path_for('consul_merit/coin.png'), size: '20x20',
+                alt: t("consul_merit.user_profile.coins") ) %>
           <span class="coints"><%= @user.points %></span>
         </span>
         <% if current_administrator? %>

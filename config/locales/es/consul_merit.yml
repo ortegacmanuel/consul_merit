@@ -1,4 +1,8 @@
 es:
   consul_merit:
     user_profile:
-      coins: Saldo en la moneda social de la ciudad
+      coins: Estrellas recibidas
+    debates:
+      info: Por cada debate creado recibirás 20
+    proposals:
+      info: Por cada propuesta creado recibirás 30

@@ -10,7 +10,7 @@ CONSULMerit adds reputation behavior to CONSUL citizen participation software in
 2. Run `rake consul_merit:install:migrations`. This creates several migrations.
 3. Run `rails g consul_merit user`. This adds `has_merit` to the User model.
 4. Run `rake db:migrate`
-5. Run `rails g consul_merit:update_views`. This updates CONSUL user's show view in order to show the user's points/social coins.
+5. Run `rails g consul_merit:custom_views`. This generates custom views in order to show the user's points/social coins.
 
 # How CONSULMerit works
 
