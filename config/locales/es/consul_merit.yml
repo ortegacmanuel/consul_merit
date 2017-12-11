@@ -5,4 +5,7 @@ es:
     debates:
       info: Por cada debate creado recibirás 20
     proposals:
-      info: Por cada propuesta creado recibirás 30
+      info: Por cada propuesta creada recibirás 30
+    shared:
+      coins: Estrellas
+      reward_title: Recompensas
