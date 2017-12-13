@@ -26,9 +26,10 @@ module Merit
         'budget_investments#create'
       ]
 
-      score 5, on: [
-        'comments#create'
-      ]
+      score 5, on: 'comments#create' do |comment|
+        # gives 1 star to comementable creator
+        comment.commentable.author.add_points(1)
+      end
     end
   end
 end
